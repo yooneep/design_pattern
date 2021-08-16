@@ -1,7 +1,7 @@
 package com.yooneep.design.structural.facade;
 
 import com.yooneep.design.HelloWorld;
-import helloworld.creational.builder.HelloWorldBuilder;
+import com.yooneep.design.creational.builder.HelloWorldBuilder;
 
 /**
  * @author yooneep
