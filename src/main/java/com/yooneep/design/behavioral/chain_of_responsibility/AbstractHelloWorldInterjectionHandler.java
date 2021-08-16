@@ -3,9 +3,9 @@ package com.yooneep.design.behavioral.chain_of_responsibility;
 /**
  * @author yooneep
  */
-public class HelloWorldObjectHandler extends HelloWorldHandler {
+public class AbstractHelloWorldInterjectionHandler extends AbstractHelloWorldHandler {
     @Override
     public void handle(StringBuffer stringBuffer) {
-        stringBuffer.append("Chain of Responsibility!");
+        stringBuffer.append("Hello ");
     }
 }

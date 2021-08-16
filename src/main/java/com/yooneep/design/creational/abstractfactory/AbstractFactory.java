@@ -1,4 +1,4 @@
-package com.yooneep.design.creational.abstract_factory;
+package com.yooneep.design.creational.abstractfactory;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -11,9 +11,9 @@ public class SplitHelloWorld implements HelloWorld {
 
     private HelloWorldObject helloWorldObject;
 
-    private static final String separator = " ";
+    private static final String SEPARATOR = " ";
 
-    private static final String terminator = "!";
+    private static final String TERMINATOR = "!";
 
     public SplitHelloWorld(HelloWorldInterjection helloWorldInterjection, HelloWorldObject helloWorldObject) {
         this.helloWorldInterjection = helloWorldInterjection;
@@ -22,7 +22,7 @@ public class SplitHelloWorld implements HelloWorld {
 
     @Override
     public String helloWorld() {
-        return helloWorldInterjection.interjection() + separator + helloWorldObject.object() + terminator;
+        return helloWorldInterjection.interjection() + SEPARATOR + helloWorldObject.object() + TERMINATOR;
     }
 
     public interface HelloWorldInterjection {

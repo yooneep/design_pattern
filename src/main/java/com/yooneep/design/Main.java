@@ -1,9 +1,8 @@
 package com.yooneep.design;
 
-
-import com.yooneep.design.behavioral.chain_of_responsibility.HelloWorldHandler;
-import com.yooneep.design.behavioral.chain_of_responsibility.HelloWorldInterjectionHandler;
-import com.yooneep.design.behavioral.chain_of_responsibility.HelloWorldObjectHandler;
+import com.yooneep.design.behavioral.chain_of_responsibility.AbstractHelloWorldHandler;
+import com.yooneep.design.behavioral.chain_of_responsibility.AbstractHelloWorldInterjectionHandler;
+import com.yooneep.design.behavioral.chain_of_responsibility.AbstractHelloWorldObjectHandler;
 import com.yooneep.design.behavioral.command.Command;
 import com.yooneep.design.behavioral.command.HelloWorldPrintCommand;
 import com.yooneep.design.behavioral.interpreter.HelloWorldInterpreter;
@@ -20,8 +19,8 @@ import com.yooneep.design.behavioral.strategy.HelloWorldStrategyContext;
 import com.yooneep.design.behavioral.template_method.TemplateMethodHelloWorld;
 import com.yooneep.design.behavioral.visitor.HelloWorldCharacterElements;
 import com.yooneep.design.behavioral.visitor.HelloWorldCharacterVisitor;
-import com.yooneep.design.creational.abstract_factory.AbstractFactory;
-import com.yooneep.design.creational.abstract_factory.SplitHelloWorldFactory;
+import com.yooneep.design.creational.abstractfactory.AbstractFactory;
+import com.yooneep.design.creational.abstractfactory.SplitHelloWorldFactory;
 import com.yooneep.design.creational.builder.HelloWorldBuilder;
 import com.yooneep.design.creational.factory_method.FactoryMethodHelloWorldFactory;
 import com.yooneep.design.creational.prototype.HelloWorldPrototype;
@@ -111,7 +110,7 @@ public class Main {
         System.out.println("We are behavioral patterns!");
 
         System.out.println("13. Chain of Responsibility: ");
-        HelloWorldHandler helloWorldChainOfResponsibility = new HelloWorldInterjectionHandler().setNext(new HelloWorldObjectHandler());
+        AbstractHelloWorldHandler helloWorldChainOfResponsibility = new AbstractHelloWorldInterjectionHandler().setNext(new AbstractHelloWorldObjectHandler());
         System.out.println(helloWorldChainOfResponsibility.helloWorld());
 
         System.out.println("14. Command: ");

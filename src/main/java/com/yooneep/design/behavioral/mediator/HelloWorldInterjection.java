@@ -10,9 +10,9 @@ public class HelloWorldInterjection implements SplitHelloWorld.HelloWorldInterje
 
     private HelloWorldMediator helloWorldMediator;
 
-    private static final String separator = " ";
+    private static final String SEPARATOR = " ";
 
-    private static final String terminator = "!";
+    private static final String TERMINATOR = "!";
 
     public void setHelloWorldMediator(HelloWorldMediator helloWorldMediator) {
         this.helloWorldMediator = helloWorldMediator;
@@ -25,6 +25,6 @@ public class HelloWorldInterjection implements SplitHelloWorld.HelloWorldInterje
 
     @Override
     public String helloWorld() {
-        return interjection() + separator + helloWorldMediator.object() + terminator;
+        return interjection() + SEPARATOR + helloWorldMediator.object() + TERMINATOR;
     }
 }

@@ -5,11 +5,11 @@ import com.yooneep.design.HelloWorld;
 /**
  * @author yooneep
  */
-public abstract class HelloWorldHandler implements HelloWorld {
+public abstract class AbstractHelloWorldHandler implements HelloWorld {
 
-    private HelloWorldHandler next;
+    private AbstractHelloWorldHandler next;
 
-    public HelloWorldHandler setNext(HelloWorldHandler next) {
+    public AbstractHelloWorldHandler setNext(AbstractHelloWorldHandler next) {
         this.next = next;
         return this;
     }

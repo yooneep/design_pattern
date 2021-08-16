@@ -13,6 +13,7 @@ public class HelloWorldPrototype implements HelloWorld {
         this.helloWorld = helloWorld;
     }
 
+    @Override
     public HelloWorld clone() {
         return new HelloWorldPrototype(this.helloWorld);
     }

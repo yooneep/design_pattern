@@ -1,11 +1,11 @@
-package com.yooneep.design.creational.abstract_factory;
+package com.yooneep.design.creational.abstractfactory;
 
 import com.yooneep.design.SplitHelloWorld;
 
 /**
  * @author yooneep
  */
-public class DesignPatternSplitHelloWorldFactory implements SplitHelloWorldFactory {
+public class JavaSplitHelloWorldFactory implements SplitHelloWorldFactory {
 
     @Override
     public SplitHelloWorld.HelloWorldInterjection createHelloWorldInterjection() {
@@ -14,14 +14,14 @@ public class DesignPatternSplitHelloWorldFactory implements SplitHelloWorldFacto
 
     @Override
     public SplitHelloWorld.HelloWorldObject createHelloWorldObject() {
-        return new DesignPatternHelloWorldObject();
+        return new JavaHelloWorldObject();
     }
 
-    class DesignPatternHelloWorldObject implements SplitHelloWorld.HelloWorldObject {
+    class JavaHelloWorldObject implements SplitHelloWorld.HelloWorldObject {
 
         @Override
         public String object() {
-            return "Abstract Factory";
+            return "Java";
         }
     }
 }
