@@ -16,7 +16,7 @@ import com.yooneep.design.behavioral.observer.Subject;
 import com.yooneep.design.behavioral.state.HelloWorldStateContext;
 import com.yooneep.design.behavioral.strategy.DesignPatternHelloWorldStrategy;
 import com.yooneep.design.behavioral.strategy.HelloWorldStrategyContext;
-import com.yooneep.design.behavioral.template_method.TemplateMethodHelloWorld;
+import com.yooneep.design.behavioral.templatemethod.TemplateMethodHelloWorld;
 import com.yooneep.design.behavioral.visitor.HelloWorldCharacterElements;
 import com.yooneep.design.behavioral.visitor.HelloWorldCharacterVisitor;
 import com.yooneep.design.creational.abstractfactory.AbstractFactory;

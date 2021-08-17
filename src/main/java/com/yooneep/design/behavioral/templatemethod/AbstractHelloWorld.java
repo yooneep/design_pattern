@@ -1,4 +1,4 @@
-package com.yooneep.design.behavioral.template_method;
+package com.yooneep.design.behavioral.templatemethod;
 
 import com.yooneep.design.HelloWorld;
 
