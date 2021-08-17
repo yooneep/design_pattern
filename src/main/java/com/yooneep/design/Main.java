@@ -110,7 +110,16 @@ public class Main {
         System.out.println("We are behavioral patterns!");
 
         System.out.println("13. Chain of Responsibility: ");
-        AbstractHelloWorldHandler helloWorldChainOfResponsibility = new AbstractHelloWorldInterjectionHandler().setNext(new AbstractHelloWorldObjectHandler());
+        AbstractHelloWorldObjectHandler abstractHelloWorldObjectHandler1 = new AbstractHelloWorldObjectHandler();
+        AbstractHelloWorldObjectHandler abstractHelloWorldObjectHandler2 = new AbstractHelloWorldObjectHandler();
+        abstractHelloWorldObjectHandler2.setNext(abstractHelloWorldObjectHandler1);
+        AbstractHelloWorldObjectHandler abstractHelloWorldObjectHandler3 = new AbstractHelloWorldObjectHandler();
+        abstractHelloWorldObjectHandler3.setNext(abstractHelloWorldObjectHandler2);
+        AbstractHelloWorldObjectHandler abstractHelloWorldObjectHandler4 = new AbstractHelloWorldObjectHandler();
+        abstractHelloWorldObjectHandler4.setNext(abstractHelloWorldObjectHandler3);
+
+        AbstractHelloWorldHandler helloWorldChainOfResponsibility = new AbstractHelloWorldInterjectionHandler()
+                .setNext(abstractHelloWorldObjectHandler4);
         System.out.println(helloWorldChainOfResponsibility.helloWorld());
 
         System.out.println("14. Command: ");

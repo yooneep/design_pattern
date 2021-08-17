@@ -5,5 +5,9 @@ package com.yooneep.design;
  */
 public interface HelloWorld {
 
+    /**
+     * helloWorld
+     * @return
+     */
     String helloWorld();
 }

@@ -21,7 +21,7 @@ public abstract class AbstractHelloWorldHandler implements HelloWorld {
         StringBuffer stringBuffer = new StringBuffer();
         handle(stringBuffer);
         if (next != null) {
-            next.handle(stringBuffer);
+            next.helloWorld();
         }
         return stringBuffer.toString();
     }
