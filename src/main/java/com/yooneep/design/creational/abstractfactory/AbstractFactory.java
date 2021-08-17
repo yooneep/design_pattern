@@ -9,13 +9,20 @@ import java.util.Map;
 public class AbstractFactory {
 
     public enum Type {
-        Java, DesignPattern;
+        /**
+         * Java
+         */
+        Java,
+        /**
+         * DesignPattern
+         */
+        DesignPattern;
     }
 
     private static Map<Type, Class<? extends SplitHelloWorldFactory>> map;
 
     static {
-        map = new HashMap<Type, Class<? extends SplitHelloWorldFactory>>();
+        map = new HashMap<>();
         map.put(Type.Java, JavaSplitHelloWorldFactory.class);
         map.put(Type.DesignPattern, DesignPatternSplitHelloWorldFactory.class);
     }
