@@ -9,12 +9,12 @@ public abstract class AbstractHelloWorld implements HelloWorld{
 
     @Override
     public String helloWorld() {
-        StringBuffer accum = new StringBuffer();
-        accum.append(getInterjection());
-        accum.append(getSeparator());
-        accum.append(getObject());
-        accum.append(getTerminator());
-        return accum.toString();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(getInterjection());
+        stringBuilder.append(getSeparator());
+        stringBuilder.append(getObject());
+        stringBuilder.append(getTerminator());
+        return stringBuilder.toString();
     }
 
     public abstract String getInterjection();
